@@ -1,0 +1,38 @@
+{
+  "name": "calgui.io",
+  "version": "1.0.0",
+  "description": "Portfolio website for Caleb Guinn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calgui1/calgui.io.git"
+  },
+  "author": "Caleb Guinn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calgui1/calgui.io/issues"
+  },
+  "homepage": "https://github.com/calgui1/calgui.io#readme",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.4.9",
+    "@chakra-ui/theme-tools": "^2.0.17",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^9.0.2",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "three": "^0.149.0",
+    "three-stdlib": "^2.21.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-next": "^13.1.6",
+    "prettier": "^2.8.4"
+  }
+}
