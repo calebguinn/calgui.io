@@ -28,13 +28,9 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         <Box
            p={2}
            color={active ? activeColor : inactiveColor}
-           as={active ? 'b' : ''}
+           bg={active ? useColorModeValue('#dddddd', '#333333') : ''}
            target={target}
            borderRadius={10}
-           _hover={{ 
-             bg: useColorModeValue('#dddddd', '#333333'), 
-             borderColor: '#eeeeee'
-           }}
            fontFamily={'Kaisei Tokumin'}
            {...props}
            >
