@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavBar from '../navbar.js'
 import { Box, Container } from "@chakra-ui/react";
+import { DisplacementSphere } from "../displacementSphere/displacementSphere.js";
 
 const Main = ({ children, router }) => {
 	return (
@@ -11,6 +12,7 @@ const Main = ({ children, router }) => {
 			</Head>
 
 			<NavBar path={router.asPath} />
+      <DisplacementSphere />
 			<Container maxW="container.lg" pt={14}>
 				{children}
 			</Container>
