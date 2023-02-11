@@ -22,7 +22,7 @@ const Projects = () => (
         </Section>
 				<Section>
           <WorkGridItem id="GOLv2" title="Game of Life" thumbnail={thumbGOLv2}>
-            A sandbox environment for John Conway's Game of Life, a 2-dimensional cellular automata that shows
+            A sandbox environment for John Conway&apos;s Game of Life, a 2-dimensional cellular automata that shows
             how complicated patterns can evolve from 3 simple rules. 
           </WorkGridItem>
 				</Section>
