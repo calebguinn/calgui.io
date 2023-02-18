@@ -26,7 +26,6 @@ const Contact = () => {
   const [isValidSubject, setIsValidSubject] = useState(true);
   const [isValidMessage, setIsValidMessage] = useState(true);
 
-  const [errors, setErrors] = useState({});
   const [buttonText, setButtonText] = useState("Submit");
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
@@ -57,9 +56,6 @@ const Contact = () => {
       isValid = false;
       setIsValidMessage(false);
     }
-
-    setErrors({ ...tempErrors });
-    //console.log("errors", errors);
     return isValid;
   };
 
