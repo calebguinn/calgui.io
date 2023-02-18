@@ -35,8 +35,6 @@ const Posts = () => (
 					/>
 				</SimpleGrid>
 			</Section>
-				
-			
 		</Container>
 	</Layout>
 )
