@@ -9,15 +9,17 @@ export const Title = ({ children }) => (
         color={useColorModeValue('#3d7aed', '#ff63c3')}
         textDecoration='underline'
         textUnderlineOffset={3}
-        display='inline-block'>
+        display='inline-block'
+        fontSize={20}
+        >
         Blog
       </Box>
 		</NextLink>
 		<span>
 			{' '}
-			<ChevronRightIcon />{' '}
+			<ChevronRightIcon boxSize={6} />{' '}
 		</span>
-		<Heading display="inline-block" as="h3" fontSize={30} mb={4}>
+		<Heading display="inline-block" as="h3" fontSize={25} mb={4}>
 			{children}
 		</Heading>
 	</Box>
