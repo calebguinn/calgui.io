@@ -6,10 +6,10 @@ import { GridItem } from "../components/grid-item";
 import defaultImage from "/public/images/projects/thumbIOS.png"
 
 const Posts = () => (
-	<Layout title="Posts">
+	<Layout title="Blog">
 		<Container maxW='container.md' mt={10}>
 			<Heading as="h3" fontSize={20} mb={4}>
-				Posts
+				Blog
 			</Heading>
 			<Section delay={0.1}>
 				<SimpleGrid columns={[1, 2, 2]} gap={6}>

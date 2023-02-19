@@ -140,15 +140,15 @@ const Contact = () => {
               Message could not be sent
             </Text>
           ) : ('')}
-          <FormControl isRequired pt={3} pb={5} isInvalid={!isValidEmail}>
-            <FormLabel>Email Address</FormLabel>
-            <Input type='email' value={email} onChange={handleEmailChange}/>
-            {!isValidEmail ? (<FormErrorMessage>Email is required</FormErrorMessage>) : ('')}
-          </FormControl>
           <FormControl isRequired pb={5} isInvalid={!isValidName}>
             <FormLabel>Name</FormLabel>
             <Input value={fullname} onChange={handleNameChange} />
             {!isValidName ? (<FormErrorMessage>Name is required</FormErrorMessage>) : ('')}
+          </FormControl>
+          <FormControl isRequired pt={3} pb={5} isInvalid={!isValidEmail}>
+            <FormLabel>Email Address</FormLabel>
+            <Input type='email' value={email} onChange={handleEmailChange}/>
+            {!isValidEmail ? (<FormErrorMessage>Email is required</FormErrorMessage>) : ('')}
           </FormControl>
           <FormControl isRequired pb={5} isInvalid={!isValidSubject}>
             <FormLabel>Subject</FormLabel>

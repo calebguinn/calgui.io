@@ -76,8 +76,8 @@ const NavBar = props => {
 					<LinkItem href="/projects" path={path}>
 						Projects
 					</LinkItem>
-					<LinkItem href="/posts" path={path}>
-						Posts
+					<LinkItem href="/blog" path={path}>
+						Blog
 					</LinkItem>
           <LinkItem href="/contact" path={path}>
             Contact
@@ -121,11 +121,16 @@ const NavBar = props => {
                     Projects
                   </MenuItem>
 								</NextLink>
-								<NextLink href="/posts" passHref>
+								<NextLink href="/blog" passHref>
 									<MenuItem bg={useColorModeValue('#ffffff','#111111')}>
-                    Posts
+                    Blog
                   </MenuItem>
 								</NextLink>
+                <NextLink href="contact" passHref>
+                  <MenuItem bg={useColorModeValue('#ffffff','#111111')}>
+                    Contact
+                  </MenuItem>
+                </NextLink>
 								<MenuItem	
 									as={Link}
 									href="https://github.com/calgui1"
