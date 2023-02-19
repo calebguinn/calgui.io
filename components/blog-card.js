@@ -17,7 +17,7 @@ export const BlogPostCard = ({ id, title, gradient }) => {
       height="100%" 
       p={6}
       _hover={{
-        bg: useColorModeValue('#eeeeee','#111111')
+        bg: useColorModeValue('#eeeeee','#222222')
       }}
       >
         <Text variant="blog-title" as="b" align="justify">
