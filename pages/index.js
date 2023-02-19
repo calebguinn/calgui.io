@@ -47,32 +47,14 @@ const LinkItem = ({ href, target, children, ...props }) => {
 const Home = () => {
 	return (
 		<Container maxW="container.md" mt={10}>
-			<Box display={{md: 'flex'}}>
-				<Box flexGrow={1}>
+			<Section delay={0.1}>
+        <Box>
 					<Heading variant="page-title">
 						Caleb Guinn
 					</Heading>
 					<p>Software Engineer / Web Developer</p>
 				</Box>
-				<Box
-					flexShrink={0}
-					mt={{ base: 4, md: 0 }}
-					ml={{ md: 6 }}
-					textAlign="center"
-				>
-					<Box
-						w="100px"
-						h="100px"
-						display="inline-block"
-						borderRadius="full"
-						overflow="hidden"
-					>
-					</Box>
-				</Box>
-			</Box>
-
-			<Section delay={0.1}>
-				<Heading as="h3" variant="section-title">
+				<Heading as="h3" variant="section-title" mt={10}>
 					About
 				</Heading>
 				<p>
