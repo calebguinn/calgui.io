@@ -73,7 +73,7 @@ const Home = () => {
 					About
 				</Heading>
 				<p>
-				  I'm Caleb, currently I live in Oklahoma and attend the University of Oklahoma (Class of &apos;23).
+				  I&apos;m Caleb, currently I live in Oklahoma and attend the University of Oklahoma (Class of &apos;23).
           I have worked on front-end projects, desktop applications, and various other projects inside and outside
           of school. I enjoy working with new and emerging technologies to create visually appealing and functional 
           user experiences. 
