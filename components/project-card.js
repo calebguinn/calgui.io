@@ -6,7 +6,15 @@ import { Global } from '@emotion/react'
 export const ProjectCard = ({ children, id, title, thumbnail }) => (
 	<Box w="100%" textAlign="center">
 		<NextLink href={`/projects/${id}`} passHref scroll={false}>
-			<LinkBox cursor="pointer">
+			<LinkBox 
+      cursor="pointer"
+      _hover={{ 
+        bg: '#22222280'
+        
+      }}
+      borderRadius={12}
+      p={5}
+      >
 				<Image
 					src={thumbnail}
 					alt={title}

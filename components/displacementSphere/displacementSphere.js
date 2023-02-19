@@ -44,7 +44,7 @@ export const DisplacementSphere = props => {
   const windowSize = useWindowSize();
   const rotationX = useSpring(0, springConfig);
   const rotationY = useSpring(0, springConfig);
-  const background = useColorModeValue('#ffffff','#111111')
+  const background = useColorModeValue('#ffffff','#000000')
   const dirLightIntensity = useColorModeValue(0.9, 0.6)
   const ambLightIntensity = useColorModeValue(0.9, 0.3)
 

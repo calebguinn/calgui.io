@@ -32,6 +32,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
            borderRadius={10}
            fontFamily={'Kaisei Tokumin'}
            as={active ? "b" : ''}
+           _hover={{
+            fontWeight: 'bold',
+            color: activeColor
+           }}
            {...props}
            >
             {children}

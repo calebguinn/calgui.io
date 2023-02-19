@@ -25,6 +25,9 @@ const LinkItem = ({ href, target, children, ...props }) => {
            p={5}
            bg={useColorModeValue('#eeeeee','#222222')}
            target={target}
+           _hover={{
+            bg: useColorModeValue('#dddddd','#333333')
+           }}
            borderRadius={5}
            gap={1}
            height='60px'
