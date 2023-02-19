@@ -24,7 +24,7 @@ const LinkItem = ({ href, target, children, ...props }) => {
       >
         <Box
            p={5}
-           bg={useColorModeValue('#aaaaaa','#222222')}
+           bg={useColorModeValue('#eeeeee','#222222')}
            target={target}
            borderRadius={5}
            gap={1}
@@ -73,16 +73,24 @@ const Home = () => {
 				<Heading as="h3" variant="section-title">
 					About
 				</Heading>
-				<Paragraph>
-					Insert about section here
-				</Paragraph>
-				<Box align="center" my={4}>
+				<p>
+				  I'm Caleb, currently I live in Oklahoma and attend the University of Oklahoma (Class of &apos;23).
+          I have worked on front-end projects, desktop applications, and various other projects inside and outside
+          of school. I enjoy working with new and emerging technologies to create visually appealing and functional 
+          user experiences. 
+				</p>
+				<Box align="center" alignItems='center' my={4} mb={10} mt={5}>
 					<NextLink href="/projects" passHref scroll={false}>
-						<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+						<Button rightIcon={<ChevronRightIcon boxSize={6} />} colorScheme="teal">
 							My projects
 						</Button>
 					</NextLink>
 				</Box>
+        <p>
+          My projects page include a few, but not all, of the things that I have worked on 
+          with more to come in the future. Check out my blog posts for a more in depth explanation of the stories
+          behind each project and how I developed them.
+        </p>
 			</Section>	
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
@@ -92,13 +100,13 @@ const Home = () => {
           <LinkItem href='https://github.com/calgui1' target="_blank">
             <IoLogoGithub />
             <Heading fontSize={20}>
-              Github
+              GitHub
             </Heading>
           </LinkItem>
           <LinkItem href='https://linkedin.com' target="_blank">
             <IoLogoLinkedin />
             <Heading fontSize={20}>
-              LinkedIn
+              Linkedin
             </Heading>
           </LinkItem>
           <LinkItem href='/contact' target=''>
@@ -109,7 +117,7 @@ const Home = () => {
         </SimpleGrid>
       </Section>
 		</Container>
-	)	
+  )
 }
 
 export default Home
