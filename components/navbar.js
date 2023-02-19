@@ -17,7 +17,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 	const active = path === href
 	const activeColor = useColorModeValue('#000000', '#ffffff')
   const inactiveColor = useColorModeValue('#222222', '#dddddd')
-  const backgroundColor = useColorModeValue('#dddddd', '#333333')
+  const backgroundColor = useColorModeValue('#eeeeee', '#222222')
 	return (
 		<NextLink 
         href={href} 
@@ -31,6 +31,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
            target={target}
            borderRadius={10}
            fontFamily={'Kaisei Tokumin'}
+           as={active ? "b" : ''}
            {...props}
            >
             {children}
