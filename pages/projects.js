@@ -16,7 +16,8 @@ const Projects = () => (
 			<SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <ProjectCard id="Portfolio" title="Portfolio" thumbnail={thumbPortfolio}>
-            My portfolio website, the one you are currently visiting.
+            My portfolio website, created using React, Next.js, Three.js. Styled using Chakra-UI. Holds all of my
+            projects, posts, and contact information.
           </ProjectCard>
         </Section>
 				<Section>
@@ -28,7 +29,7 @@ const Projects = () => (
         <Section delay={0.2}>
           <ProjectCard id="IOS" title="Instructor-Operator System" thumbnail={thumbIOS}>
 						An instructor operator system designed for industrial flight simulators that 
-            utilizes WebAssembly technology to allow concurrent access to a simulator for multiple instructors.
+            utilizes WebAssembly to allow concurrent access to a simulator for multiple instructors.
 					</ProjectCard>
         </Section>
 			</SimpleGrid>	

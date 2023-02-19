@@ -116,38 +116,41 @@ const Contact = () => {
         <Heading variant="page-title">
           Say Hello
         </Heading>
-        <Box maxW="container.md" bg={useColorModeValue("#00000060","#11111199")} borderRadius={10} mt={10} p={10}>
-          {showSuccessMessage ? (
-            <Text color='green'>
-              Message Sent
-            </Text>
-          ) : ('')}
-          {showFailureMessage ? (
-            <Text color='red'>
-              Message could not be sent
-            </Text>
-          ) : ('')}
-          <FormControl isRequired pb={5} isInvalid={!isValidName}>
-            <FormLabel>Name</FormLabel>
-            <Input value={fullname} onChange={handleNameChange} />
-            {!isValidName ? (<FormErrorMessage>Name is required</FormErrorMessage>) : ('')}
-          </FormControl>
-          <FormControl isRequired pt={3} pb={5} isInvalid={!isValidEmail}>
-            <FormLabel>Email Address</FormLabel>
-            <Input type='email' value={email} onChange={handleEmailChange}/>
-            {!isValidEmail ? (<FormErrorMessage>Email is required</FormErrorMessage>) : ('')}
-          </FormControl>
-          <FormControl isRequired pb={5} isInvalid={!isValidMessage}>
-            <FormLabel>Message</FormLabel>
-            <Textarea value={message} onChange={handleMessageChange} />
-            {!isValidMessage ? (<FormErrorMessage>Message is required</FormErrorMessage>) : ('')}
-          </FormControl>
-          <Box align='center'>
-            <Button isLoading={isSubmitting} loadingText='Submitting' colorScheme='teal' onClick={handleSubmit}>
-              {buttonText}
-            </Button>
+        <Box maxW="container.md" borderRadius={14} bgGradient="linear(to-r, #ff0f7b, #f89b29)" p={1} mt={10}>
+          <Box maxW="container.md" bg={useColorModeValue("#ffffff","#111111")} borderRadius={10} p={10}>
+            {showSuccessMessage ? (
+              <Text color='green'>
+                Message Sent
+              </Text>
+            ) : ('')}
+            {showFailureMessage ? (
+              <Text color='red'>
+                Message could not be sent
+              </Text>
+            ) : ('')}
+            <FormControl isRequired pb={5} isInvalid={!isValidName}>
+              <FormLabel>Name</FormLabel>
+              <Input value={fullname} onChange={handleNameChange} />
+              {!isValidName ? (<FormErrorMessage>Name is required</FormErrorMessage>) : ('')}
+            </FormControl>
+            <FormControl isRequired pt={3} pb={5} isInvalid={!isValidEmail}>
+              <FormLabel>Email Address</FormLabel>
+              <Input type='email' value={email} onChange={handleEmailChange}/>
+              {!isValidEmail ? (<FormErrorMessage>Email is required</FormErrorMessage>) : ('')}
+            </FormControl>
+            <FormControl isRequired pb={5} isInvalid={!isValidMessage}>
+              <FormLabel>Message</FormLabel>
+              <Textarea value={message} onChange={handleMessageChange} />
+              {!isValidMessage ? (<FormErrorMessage>Message is required</FormErrorMessage>) : ('')}
+            </FormControl>
+            <Box align='center'>
+              <Button isLoading={isSubmitting} loadingText='Submitting' colorScheme='gray' onClick={handleSubmit}>
+                {buttonText}
+              </Button>
+            </Box>
           </Box>
         </Box>
+        
       </Container>
     </Layout>
   )
