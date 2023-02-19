@@ -18,12 +18,10 @@ import {  } from "@chakra-ui/react"
 const Contact = () => {
   const [fullname, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [isValidName, setIsValidName] = useState(true);
-  const [isValidSubject, setIsValidSubject] = useState(true);
   const [isValidMessage, setIsValidMessage] = useState(true);
 
   const [buttonText, setButtonText] = useState("Submit");
@@ -46,11 +44,6 @@ const Contact = () => {
       isValid = false;
       setIsValidEmail(false);
     }
-    if (subject.length <= 0) {
-      tempErrors["subject"] = true;
-      isValid = false;
-      setIsValidSubject(false);
-    }
     if (message.length <= 0) {
       tempErrors["message"] = true;
       isValid = false;
@@ -70,7 +63,6 @@ const Contact = () => {
         body: JSON.stringify({
           email: email,
           fullname: fullname,
-          subject: subject,
           message: message,
         }),
         headers: {
@@ -95,7 +87,6 @@ const Contact = () => {
 
       setEmail('');
       setFullName('');
-      setSubject('');
       setMessage('');
     } else {
       setIsSubmitting(false);
@@ -112,10 +103,6 @@ const Contact = () => {
   const handleNameChange = (e) => {
     setFullName(e.target.value);
     setIsValidName(true);
-  }
-  const handleSubjectChange = (e) => {
-    setSubject(e.target.value);
-    setIsValidSubject(true);
   }
   const handleMessageChange = (e) => {
     setMessage(e.target.value);
@@ -149,11 +136,6 @@ const Contact = () => {
             <FormLabel>Email Address</FormLabel>
             <Input type='email' value={email} onChange={handleEmailChange}/>
             {!isValidEmail ? (<FormErrorMessage>Email is required</FormErrorMessage>) : ('')}
-          </FormControl>
-          <FormControl isRequired pb={5} isInvalid={!isValidSubject}>
-            <FormLabel>Subject</FormLabel>
-            <Input value={subject} onChange={handleSubjectChange} />
-            {!isValidSubject ? (<FormErrorMessage>Subject is required</FormErrorMessage>) : ('')}
           </FormControl>
           <FormControl isRequired pb={5} isInvalid={!isValidMessage}>
             <FormLabel>Message</FormLabel>
