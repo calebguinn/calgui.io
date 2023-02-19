@@ -2,7 +2,6 @@ import NextLink from 'next/link'
 import {
 	Container,
 	Box,
-	Link,
 	Stack,
 	Menu,
 	MenuItem,
@@ -12,7 +11,6 @@ import {
 	useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -82,18 +80,6 @@ const NavBar = props => {
           <LinkItem href="/contact" path={path}>
             Contact
           </LinkItem>
-					<LinkItem
-						target="_blank"
-						href="https://github.com/calgui1"
-						path={path}
-						display="inline-flex"
-						alignItems="center"
-						style={{ gap: 4 }}
-						pl={2}
-					>
-						<IoLogoGithub />
-            Github
-					</LinkItem>
 				</Stack>
 
 				<Box flex={1} align="right">
@@ -131,13 +117,6 @@ const NavBar = props => {
                     Contact
                   </MenuItem>
                 </NextLink>
-								<MenuItem	
-									as={Link}
-									href="https://github.com/calgui1"
-                  bg={useColorModeValue('#ffffff','#111111')}
-								>
-									Github
-								</MenuItem>
 							</MenuList>
 						</Menu>
 					</Box>
