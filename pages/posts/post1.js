@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import Layout from "../../components/layouts/article"
-import { Title, PostImage, Meta } from "../../components/post";
+import { Title } from "../../components/post";
 import { Badge } from "@chakra-ui/react";
 
 const Post = () => {
