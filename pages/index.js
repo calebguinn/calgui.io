@@ -8,7 +8,6 @@ import {
   Spacer
 } from '@chakra-ui/react'
 import Section from '../components/section'
-import Paragraph from '../components/paragraph'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
