@@ -8,7 +8,7 @@ const Post = () => {
     <Layout title="Post">
       <Container maxW="container.md" mt={10}>
         <Title>
-          Creating the Game of Life Simulator using Javascript and HTML<Badge>01/01/2023</Badge>
+          Creating the Game of Life Simulator using Javascript and HTML<Badge fontSize={20}>01/01/2023</Badge>
         </Title>
       </Container>
     </Layout>

@@ -8,8 +8,8 @@ const Post = () => {
     <Layout title="Post">
       <Container maxW="container.md" mt={10}>
         <Title>
-          How I built the Instructor Operator System using WASM and QT <Badge>01/01/2023</Badge>
-        </Title>
+          How I built the Instructor Operator System using WASM and QT <Badge fontSize={20}>01/01/2023</Badge>
+        </Title> 
       </Container>
     </Layout>
   )
