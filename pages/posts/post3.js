@@ -8,8 +8,9 @@ const Post = () => {
     <Layout title="Post">
       <Container maxW="container.md" mt={10}>
         <Title>
-          How I built my portfolio website using Next.js <Badge fontSize={20}>01/01/2023</Badge>
+          How I built my portfolio website using Next.js
         </Title>
+        <Badge fontFamily="Kaisei Tokumin" fontSize={20}>01/01/2023</Badge>
       </Container>
     </Layout>
   )

@@ -99,14 +99,20 @@ const Contact = () => {
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
     setIsValidEmail(true);
+    setShowSuccessMessage(false);
+    setShowFailureMessage(false);
   }
   const handleNameChange = (e) => {
     setFullName(e.target.value);
     setIsValidName(true);
+    setShowSuccessMessage(false);
+    setShowFailureMessage(false);
   }
   const handleMessageChange = (e) => {
     setMessage(e.target.value);
     setIsValidMessage(true);
+    setShowSuccessMessage(false);
+    setShowFailureMessage(false);
   }
 
 
