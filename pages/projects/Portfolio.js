@@ -21,13 +21,19 @@ const Project = () => (
         meant to be a place to display my work and connect with others. I am using Vercel to deploy
         and host my other sites.
 			</Paragraph>
-			<List ml={4}>
+			<List ml={4} mt={4} mb={4}>
 				<ListItem>
 					<Meta>Website</Meta>
 					<Link href="https://calgui.io">
 						https://calgui.io <ExternalLinkIcon mx="2px" />
 					</Link>
 				</ListItem>
+        <ListItem>
+          <Meta>GitHub</Meta>
+          <Link href="https://github.com/calgui1/calgui.io">
+            https://github.com/calgui1/calgui.io <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
 				<ListItem>
 					<Meta>Platform</Meta>
 					<span>Chrome, Safari, Firefox</span>

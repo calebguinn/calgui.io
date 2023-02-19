@@ -19,13 +19,19 @@ const Project = () => (
 			<Paragraph>
 				An instructor operator system for industrial-grade flight simulators that utilizes WebAssembly.
 			</Paragraph>
-			<List ml={4}>
+			<List ml={4} mt={4} mb={4}>
 				<ListItem>
 					<Meta>Website</Meta>
 					<Link href="https://www.github.com/calgui1/CymStar-IOS">
 						https://www.github.com <ExternalLinkIcon mx="2px" />
 					</Link>
 				</ListItem>
+        <ListItem>
+          <Meta>GitHub</Meta>
+          <Link href="https://github.com/calgui1/Instructor-Operator-System">
+            https://github.com/calgui1/Instructor-Operator-System <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
 				<ListItem>
 					<Meta>Platform</Meta>
 					<span>Chrome, Safari, Firefox</span>

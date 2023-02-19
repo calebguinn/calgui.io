@@ -10,7 +10,7 @@ import thumbPortfolio from '../public/images/projects/thumbPortfolio.png'
 const Projects = () => (
 	<Layout title="Projects">
 		<Container maxW='container.md' mt={10}>
-			<Heading as="h3" fontSize={20} mb={4}>
+			<Heading variant='page-title' mb={10}>
 				Projects
 			</Heading>
 			<SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -31,7 +31,6 @@ const Projects = () => (
             utilizes WebAssembly technology to allow concurrent access to a simulator for multiple instructors.
 					</ProjectCard>
         </Section>
-				
 			</SimpleGrid>	
 		</Container>
 	</Layout>

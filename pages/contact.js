@@ -116,7 +116,7 @@ const Contact = () => {
         <Heading variant="page-title">
           Say Hello
         </Heading>
-        <Box maxW="container.md" bg={useColorModeValue("#00000040","#22222299")} borderRadius={10} mt={10} p={10}>
+        <Box maxW="container.md" bg={useColorModeValue("#00000060","#11111199")} borderRadius={10} mt={10} p={10}>
           {showSuccessMessage ? (
             <Text color='green'>
               Message Sent
