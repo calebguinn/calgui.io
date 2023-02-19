@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem } from "../components/grid-item";
+import { ProjectCard } from "../components/project-card";
 
 import thumbIOS from '../public/images/projects/thumbIOS.png'
 import thumbGOLv2 from '../public/images/projects/thumbGOL-v2.png'
@@ -13,24 +13,23 @@ const Projects = () => (
 			<Heading as="h3" fontSize={20} mb={4}>
 				Projects
 			</Heading>
-
 			<SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="Portfolio" title="Portfolio" thumbnail={thumbPortfolio}>
+          <ProjectCard id="Portfolio" title="Portfolio" thumbnail={thumbPortfolio}>
             My portfolio website, the one you are currently visiting.
-          </WorkGridItem>
+          </ProjectCard>
         </Section>
 				<Section>
-          <WorkGridItem id="GOLv2" title="Game of Life" thumbnail={thumbGOLv2}>
+          <ProjectCard id="GOLv2" title="Game of Life" thumbnail={thumbGOLv2}>
             A sandbox environment for John Conway&apos;s Game of Life, a 2-dimensional cellular automata that shows
             how complicated patterns can evolve from 3 simple rules. 
-          </WorkGridItem>
+          </ProjectCard>
 				</Section>
         <Section delay={0.2}>
-          <WorkGridItem id="IOS" title="Instructor-Operator System" thumbnail={thumbIOS}>
+          <ProjectCard id="IOS" title="Instructor-Operator System" thumbnail={thumbIOS}>
 						An instructor operator system designed for industrial flight simulators that 
             utilizes WebAssembly technology to allow concurrent access to a simulator for multiple instructors.
-					</WorkGridItem>
+					</ProjectCard>
         </Section>
 				
 			</SimpleGrid>	
