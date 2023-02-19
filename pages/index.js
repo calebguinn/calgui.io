@@ -2,12 +2,45 @@ import {
 	Container, 
 	Box, 
 	Heading,
-	Button
+	Button,
+  SimpleGrid,
+  useColorModeValue,
+  Spacer
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import NextLink from 'next/link'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+
+const LinkItem = ({ href, target, children, ...props }) => {
+	return (
+		<NextLink 
+        href={href}
+        passHref
+        scroll={false}
+        target={target}
+      >
+        <Box
+           p={5}
+           bg={useColorModeValue('#aaaaaa','#222222')}
+           target={target}
+           borderRadius={5}
+           gap={1}
+           height='60px'
+           width='100%'
+           display='inline-flex'
+           alignItems='center'
+           {...props}
+           >
+            {children}
+            <Spacer />
+            <ExternalLinkIcon />
+        </Box>
+		</NextLink>
+	)
+}
 
 const Home = () => {
 	return (
@@ -51,6 +84,30 @@ const Home = () => {
 					</NextLink>
 				</Box>
 			</Section>	
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Links
+        </Heading>
+        <SimpleGrid columns={[1, 3, 3]} gap={6} mt={10}>
+          <LinkItem href='https://github.com/calgui1' target="_blank">
+            <IoLogoGithub />
+            <Heading fontSize={20}>
+              Github
+            </Heading>
+          </LinkItem>
+          <LinkItem href='https://linkedin.com' target="_blank">
+            <IoLogoLinkedin />
+            <Heading fontSize={20}>
+              LinkedIn
+            </Heading>
+          </LinkItem>
+          <LinkItem href='/contact' target=''>
+            <Heading fontSize={20}>
+              Contact
+            </Heading>
+          </LinkItem>
+        </SimpleGrid>
+      </Section>
 		</Container>
 	)	
 }
