@@ -122,7 +122,7 @@ const Contact = () => {
         <Heading variant="page-title">
           Say Hello
         </Heading>
-        <Box maxW="container.md" borderRadius={14} bgGradient="linear(to-r, #ff0f7b, #f89b29)" p={1} mt={10}>
+        <Box maxW="container.md" borderRadius={14} bgGradient="linear(to-r, #FDE68A, #FCA5A5, #FECACA)" p={1} mt={10}>
           <Box maxW="container.md" bg={useColorModeValue("#ffffff","#000000")} borderRadius={10} p={10}>
             {showSuccessMessage ? (
               <Text color='green'>
