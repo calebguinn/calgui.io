@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox } from '@chakra-ui/react'
+import { Box, Text, LinkBox, useColorModeValue } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const ProjectCard = ({ children, id, title, thumbnail }) => (
@@ -9,8 +9,7 @@ export const ProjectCard = ({ children, id, title, thumbnail }) => (
 			<LinkBox 
       cursor="pointer"
       _hover={{ 
-        bg: '#22222280'
-        
+        bg: useColorModeValue('#cccccc80','#11111180')
       }}
       borderRadius={12}
       p={5}
