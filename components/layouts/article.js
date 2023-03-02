@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
+import { ProjectImageStyle } from "../project";
 import { ProjectCardStyle } from "../project-card";
 
 const variants = {
@@ -29,6 +30,7 @@ const Layout = ({ children, title }) => {
 				)}
 				{children}
 				<ProjectCardStyle />
+        <ProjectImageStyle />
 			</>
 		</motion.article>
 	)

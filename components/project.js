@@ -1,6 +1,8 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Badge, useColorModeValue } from '@chakra-ui/react'
+import { Heading, Box, Badge, useColorModeValue } from '@chakra-ui/react'
+import Image from 'next/image'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { Global } from '@emotion/react'
 
 export const Title = ({ children }) => (
 	<Box>
@@ -24,7 +26,27 @@ export const Title = ({ children }) => (
 )
 
 export const ProjectImage = ({ src, alt }) => (
-	<Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+  <Box mt={4} mb={4}>
+    <Image 
+        height="500" 
+        width="900" 
+        src={src} 
+        alt={alt}
+        className="project-image"
+    />
+  </Box>
+  
+)
+
+export const ProjectImageStyle = () => (
+	<Global
+		styles={`
+			.project-image {
+				border-radius: 12px;
+        height: 400px;
+			}
+		`}
+	/>
 )
 
 export const Meta = ({ children }) => (

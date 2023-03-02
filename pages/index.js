@@ -87,7 +87,7 @@ const Home = () => {
               GitHub
             </Heading>
           </LinkItem>
-          <LinkItem href='https://linkedin.com' target="_blank">
+          <LinkItem href='https://www.linkedin.com/in/caleb-guinn-25043b216' target="_blank">
             <IoLogoLinkedin />
             <Heading fontSize={20}>
               Linkedin
