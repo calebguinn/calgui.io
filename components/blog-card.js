@@ -1,9 +1,9 @@
-import { Box, Text, useColorModeValue } from "@chakra-ui/react"
-import NextLink from 'next/link'
+import { Box, Spacer, Text, useColorModeValue } from "@chakra-ui/react"
+import Link from 'next/link'
 
-export const BlogPostCard = ({ id, title, gradient }) => {
+export const BlogPostCard = ({ id, title, timecode, gradient }) => {
   return (
-  <NextLink href={`/posts/${id}`} passHref scroll={false}>
+  <Link href={`/posts/${id}`} passHref scroll={false}>
     <Box 
     borderRadius={15} 
     bgGradient={gradient} 
@@ -23,8 +23,12 @@ export const BlogPostCard = ({ id, title, gradient }) => {
         <Text variant="blog-title" as="b" align="justify">
           {title}
         </Text>
+        <Spacer />
+        <Text>
+          {timecode}
+        </Text>
       </Box>
     </Box>
-  </NextLink>
+  </Link>
   )
 }
