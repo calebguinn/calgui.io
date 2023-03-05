@@ -9,20 +9,21 @@ import rehypeMinify from 'rehype-preset-minify'
 import rehypeSlug from 'rehype-slug'
 import { POSTS_PATH, postFilePaths } from '../../lib/mdx'
 import { formatTimecode } from '../../lib/timecode'
-import rehypePrism from '@mapbox/rehype-prism'
-import { Container } from '@chakra-ui/react'
+import { Box, Container, useColorModeValue } from '@chakra-ui/react'
 import { postMarkdown } from '../../components/post'
 import { Title } from '../../components/post'
 import Layout from '../../components/layouts/article'
 
-export default function PostPage({ frontmatter, code, timecode }) {
+export default function PostPage({ frontmatter, code }) {
   const MDXComponent = useMemo(() => getMDXComponent(code), [code]);
 
   return (
     <Layout title="Post">
       <Container maxW='container.md' mt={10}>
-        <Title>{frontmatter.title}</Title>
+      <Title>{frontmatter.title}</Title>
+        <Box bg={useColorModeValue('#dddddd','#22222290')} borderRadius={15} p={5}>
           <MDXComponent components={postMarkdown} />
+        </Box>
       </Container>
     </Layout>
   );
@@ -38,7 +39,6 @@ export const getStaticProps = async ({ params }) => {
       options.remarkPlugins = [...(options.remarkPlugins ?? [])];
       options.rehypePlugins = [
         ...(options.rehypePlugins ?? []),
-        rehypePrism,
         rehypeSlug,
         rehypeMinify,
         [rehypeImgSize, { dir: 'public' }],

@@ -47,25 +47,25 @@ export const Meta = ({ children }) => (
 )
 
 const PostH1 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={2} as="h1" {...rest}>
+  <Heading id={id} level={2} fontSize={32} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH2 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={3} as="h2" {...rest}>
+  <Heading id={id} level={3} fontSize={24} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH3 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={4} as="h3" {...rest}>
+  <Heading id={id} level={4} fontSize={18} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH4 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={5} as="h4" {...rest}>
+  <Heading id={id} level={5} fontSize={16} {...rest}>
     {children}
   </Heading>
 );
@@ -100,13 +100,14 @@ const PostLi = ({ children, ...props }) => {
   return <ListItem {...props}>{children}</ListItem>;
 };
 
-const PostCode = ({ children, ...rest }) => (
-  <code {...rest}>
-    <Code>
+const PostCode = ({ children, ...rest }) => {
+  return (
+    <code {...rest}>
       {children}
-    </Code>
-  </code>
-);
+    </code>
+  )
+  
+};
 
 const PostPre = props => {
   return (

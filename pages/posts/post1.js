@@ -8,9 +8,9 @@ const Post = () => {
     <Layout title="Post">
       <Container maxW="container.md" mt={10}>
         <Title>
-          How I built the Instructor Operator System using WASM and QT 
+          How I built the Instructor Operator System using WASM and QT <Badge fontFamily="Kaisei Tokumin">01/01/2023</Badge>
         </Title> 
-        <Badge fontFamily="Kaisei Tokumin" fontSize={20}>01/01/2023</Badge>
+        
       </Container>
     </Layout>
   )
