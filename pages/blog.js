@@ -23,13 +23,13 @@ export default function Blog({ posts }) {
                 id={slug} 
                 title={post.title}
                 timecode={post.timecode} 
+                date={post.date}
                 gradient="linear(to-r, #D8B4FE , #818CF8)" 
                 key={index}
               />
             ))}
           </SimpleGrid>
-        </Section>
-        
+        </Section> 
       </Container>
     </Layout>
   )	

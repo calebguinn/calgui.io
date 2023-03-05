@@ -20,7 +20,7 @@ export default function PostPage({ frontmatter, code }) {
   return (
     <Layout title="Post">
       <Container maxW='container.md' mt={10}>
-      <Title>{frontmatter.title}</Title>
+        <Title>{frontmatter.title}</Title>
         <Box bg={useColorModeValue('#dddddd','#22222290')} borderRadius={15} p={5}>
           <MDXComponent components={postMarkdown} />
         </Box>
