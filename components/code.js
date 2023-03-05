@@ -10,7 +10,7 @@ export const Code = ({ children }) => {
   
   return (
     <Box 
-      bg={useColorModeValue("ffffff","#1e1e1e")} 
+      bg={useColorModeValue("#ffffff","#1e1e1e")} 
       pl={5}
       pr={5} 
       pt={2} 
