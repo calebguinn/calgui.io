@@ -27,6 +27,7 @@
     "@emotion/styled": "^11.10.5",
     "@mapbox/rehype-prism": "^0.8.0",
     "@sendgrid/mail": "^7.7.0",
+    "esbuild": "^0.17.11",
     "framer-motion": "^9.0.2",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^9.2.1",
