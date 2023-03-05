@@ -1,4 +1,4 @@
-import { Text, Box, Container, Heading, SimpleGrid, useColorModeValue, Spacer } from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid, useColorModeValue } from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { BlogPostCard } from "../components/blog-card";
@@ -40,7 +40,7 @@ export default function Blog({ posts, featured }) {
           <Box bg={useColorModeValue('#dddddd90','#22222290')} borderRadius={10}>
             {posts.map(({slug, ...post}, index)  => (
               <BlogListCard
-                id={post.slug}
+                id={slug}
                 title={post.title}
                 timecode={post.timecode}
                 date={post.date}

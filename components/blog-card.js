@@ -1,4 +1,4 @@
-import { Box, Spacer, Text, useColorModeValue } from "@chakra-ui/react"
+import { Box, Text, useColorModeValue } from "@chakra-ui/react"
 import Link from 'next/link'
 
 export const BlogPostCard = ({ id, title, gradient }) => {
