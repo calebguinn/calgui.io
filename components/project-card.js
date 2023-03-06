@@ -34,7 +34,6 @@ export const ProjectCardStyle = () => (
 		styles={`
 			.project-card-thumbnail {
 				border-radius: 12px;
-        height: 350px;
 			}
 		`}
 	/>
