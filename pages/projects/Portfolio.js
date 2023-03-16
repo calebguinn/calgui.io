@@ -43,7 +43,7 @@ const Project = () => (
 					<span>Node.js, Next.js, React, Chakra-UI, Three.js</span>
 				</ListItem>
 			</List>
-			<ProjectImage src="/images/projects/thumbPortfolio.png" alt="Portfolio" />			
+			<ProjectImage src="/static/images/projects/thumbPortfolio.png" alt="Portfolio" />			
 		</Container>
 	</Layout>
 )

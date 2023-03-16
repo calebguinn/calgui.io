@@ -42,7 +42,7 @@ const Project = () => (
 					<span>HTML, JS, CSS</span>
 				</ListItem>
 			</List>
-			<ProjectImage src="/images/projects/thumbGOL-v2.png" alt="Game of Life" />
+			<ProjectImage src="/static/images/projects/thumbGOL-v2.png" alt="Game of Life" />
 
 		</Container>
 	</Layout>

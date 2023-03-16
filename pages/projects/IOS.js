@@ -39,7 +39,7 @@ const Project = () => (
 					<span>C++, WebAssembly</span>
 				</ListItem>
 			</List>
-			<ProjectImage src="/images/projects/thumbIOS.png" alt="IOS" />			
+			<ProjectImage src="/static/images/projects/thumbIOS.png" alt="IOS" />			
       <Paragraph>
         Since this was a prototype built using an existing codebase, I am unable to provide any demo of this application because
         the company works with the U.S. Department of Defense and wants to maintain privacy.
