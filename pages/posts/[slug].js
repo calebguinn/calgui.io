@@ -24,7 +24,7 @@ export default function PostPage({ frontmatter, code }) {
           {frontmatter.title}
           <Meta>{frontmatter.date}</Meta>
         </Title>
-        <Box bg={useColorModeValue('#dddddd','#22222290')} borderRadius={15} p={5}>
+        <Box bg={useColorModeValue('#dddddd90','#22222290')} borderRadius={15} p={5}>
           <MDXComponent components={postMarkdown} />
         </Box>
       </Container>
