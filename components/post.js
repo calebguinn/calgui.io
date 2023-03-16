@@ -50,25 +50,25 @@ export const Meta = ({ children }) => (
 )
 
 const PostH1 = ({ children, id, ...rest }) => (
-  <Heading mt={4} fontSize={32} {...rest}>
+  <Heading mt={4} id={id} fontSize={32} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH2 = ({ children, id, ...rest }) => (
-  <Heading mt={4} fontSize={24} {...rest}>
+  <Heading mt={4} id={id} fontSize={24} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH3 = ({ children, id, ...rest }) => (
-  <Heading mt={4} fontSize={18} {...rest}>
+  <Heading mt={4} id={id} fontSize={18} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH4 = ({ children, id, ...rest }) => (
-  <Heading mt={4} fontSize={16} {...rest}>
+  <Heading mt={4} id={id} fontSize={16} {...rest}>
     {children}
   </Heading>
 );
