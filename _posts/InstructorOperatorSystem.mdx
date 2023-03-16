@@ -39,24 +39,23 @@ With a UI that needs to be able to display about 40 buttons/controls, it can be 
 
 The final UI that was implemented in the application was created with the use of the Qt framework and C++. Ultimately, I decided to use Qt because I did not have a lot of C++ experience at the time and also did not have the time required to come up with my own UI components. If I had more time, I definitely would have enjoyed working on the design more, and mostly just touching up the styling of it to better suit the use case, but the actual backend work on making everything sync with the simulation is what took the most time.
 
-
 ![Malfunctions Page for the IOS](/static/images/projects/Instructor-Operator-System/iosScreenshot3.png)
 
-# Backend
-
-The most challenging part of this project was working with the company's real-time task scheduler and the large amount of symbols used by the simulation. The design of my solution's UI took about 2 weeks, and with about 6 weeks left of the course, I had to work even faster on everything else. Instead of trying to figure out which symbols matched with a certain component, I focused on making the components work after being compiled to the web browser before managing interaction with the simulation. This process took much longer than expected, mainly because my other courses were getting busier in the last weeks of the semester. 
-
-# Qt WebAssembly
+# Building out the features
 
 Getting the main UI to function properly took a while, mostly because I hadn't worked with C++ on a project of this size before and was still getting accustomed to it. The biggest issues in the implementation of the UI was getting the tanks to adjust recursively so that a user could control all tanks at once, or all tanks within a certain section, or any individual tank while also adjusting any connected tanks. It was a difficult thing to implement because even though there were 16 tanks, there were 41 UI elements that displayed tank information and 25 UI elements that could control certain groups of tanks. 
 
 That was a major part of getting the initial UI to work correctly, but another major part was importing a CSV of malfunctions into the Malfunctions page of the UI. The reason why this was so difficult at first was because of the DOM of an application compiled using Emscripten and WebAssembly. After a while, I figured that the CSV would only be usable if I hardcoded in the malfunctions into the Malfunctions page and so that is what I had to do. This took a long time because there were 63 types of malfunctions for this specific simulation. After hardcoding these malfunctions, I then had to figure out the logic behind dragging/dropping a malfunction from the available list into the staged list, and finally into the activated list. 
 
-# Connecting the application to the simulation
+## Real-time scheduling
+
+The most challenging part of this project was working with the company's real-time task scheduler and the large amount of symbols used by the simulation. The design of my solution's UI took about 2 weeks, and with about 6 weeks left of the course, I had to work even faster on everything else. Instead of trying to figure out which symbols matched with a certain component, I focused on making the components work after being compiled to the web browser before managing interaction with the simulation. This process took much longer than expected, mainly because my other courses were getting busier in the last weeks of the semester. 
+
+## Connecting the application to the simulation
 
 This part of the project is what I ultimately was not able to finish in enough time. I was able to use websockets to transmit data from the control interface to the simulation but did not have enough time to build a receiver that could take this data, find the corresponding symbol, and send that to the scheduler. Maybe if I had more time, or if I could've worked in a group it could have been implemented but overall I was happy with how far I had gotten.
 
-# Conclusion
+# Final remarks
 
 When I chose this project I intially thought it would be a web-development project where I could actually work with some JS framework and build a full-stack application. Upon learning that it would be something else entirely, I was a little disappointed at first but that quickly faded once I started to learn more about WebAssembly and C++. Overall, I am very satisfied with the amount of work I was able to complete within a semester all while working on other courses. I still have things that I want to fix with the project, but since I do not have access to the VM I can't work on it any further. 
 

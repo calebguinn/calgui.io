@@ -15,12 +15,18 @@ export const BlogListCard = ({ id, title, timecode, date }) => {
           {title}
         </Text>
         <Spacer display='inline-flex' boxSize={6}/>
-        <Text display='inline-flex' alignItems='center'>
-          <AiFillClockCircle /><Spacer boxSize={1} />{timecode}
-        </Text>
-        <Text ml={4} display='inline-flex' alignItems='center'>
-          <IoCalendar /><Spacer boxSize={1} />{date}
-        </Text>
+        <Box display='inline-flex' alignItems='center'>
+          <AiFillClockCircle /><Spacer boxSize={1} />
+          <Text display='inline-flex' alignItems='center'>
+            {timecode}
+          </Text>
+        </Box>
+        <Box ml={4} display='inline-flex' alignItems='center'>
+          <IoCalendar /><Spacer boxSize={1} />
+          <Text display='inline-flex' alignItems='center'>
+            {date}
+          </Text>
+        </Box>
       </Box>
     </Box>
   </Link>
