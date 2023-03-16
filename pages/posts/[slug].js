@@ -11,7 +11,7 @@ import { POSTS_PATH, postFilePaths } from '../../lib/mdx'
 import { formatTimecode } from '../../lib/timecode'
 import { Box, Container, useColorModeValue } from '@chakra-ui/react'
 import { postMarkdown } from '../../components/post'
-import { Title } from '../../components/post'
+import { Title, Meta } from '../../components/post'
 import Layout from '../../components/layouts/article'
 
 export default function PostPage({ frontmatter, code }) {
@@ -20,7 +20,10 @@ export default function PostPage({ frontmatter, code }) {
   return (
     <Layout title="Post">
       <Container maxW='container.md' mt={10}>
-        <Title>{frontmatter.title}</Title>
+        <Title>
+          {frontmatter.title}
+          <Meta>{frontmatter.date}</Meta>
+        </Title>
         <Box bg={useColorModeValue('#dddddd','#22222290')} borderRadius={15} p={5}>
           <MDXComponent components={postMarkdown} />
         </Box>

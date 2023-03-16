@@ -1,14 +1,15 @@
 import NextLink from 'next/link'
 import { 
   Link , 
-  List, 
   ListItem, 
   Text,
   Heading, 
   Box, 
-  Image, 
   Badge, 
-  useColorModeValue 
+  Image,
+  useColorModeValue, 
+  UnorderedList,
+  OrderedList
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Children } from 'react'
@@ -36,51 +37,52 @@ export const Title = ({ children }) => (
 	</Box>
 )
 
-export const PostImage = ({ src, alt }) => (
-	<Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+const PostImage = ({ src, alt }) => (
+  <Box p={6}>
+    <Image src={src} alt={alt} w="100%" borderRadius="lg"/>
+  </Box>
 )
 
 export const Meta = ({ children }) => (
-	<Badge colorScheme="green" mr={2}>
+	<Badge colorScheme="green" ml={2} fontSize={16}>
 		{children}
 	</Badge>
 )
 
 const PostH1 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={2} fontSize={32} {...rest}>
+  <Heading mt={4} fontSize={32} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH2 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={3} fontSize={24} {...rest}>
+  <Heading mt={4} fontSize={24} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH3 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={4} fontSize={18} {...rest}>
+  <Heading mt={4} fontSize={18} {...rest}>
     {children}
   </Heading>
 );
 
 const PostH4 = ({ children, id, ...rest }) => (
-  <Heading id={id} level={5} fontSize={16} {...rest}>
+  <Heading mt={4} fontSize={16} {...rest}>
     {children}
   </Heading>
 );
 
 const PostParagraph = ({ children, ...rest }) => {
-  const hasSingleChild = Children.count(children) === 1;
   const firstChild = Children.toArray(children)[0];
 
-  // Prevent `img` being wrapped in `p`
-  if (hasSingleChild && firstChild.type === PostImage) {
+  // Prevent img being wrapped in p
+  if (firstChild.type === PostImage) {
     return children;
   }
 
   return (
-    <Text size="l" as="p" {...rest}>
+    <Text size="l" as="p" pl={6} pr={6} pt={6}{...rest}>
       {children}
     </Text>
   );
@@ -89,11 +91,13 @@ const PostParagraph = ({ children, ...rest }) => {
 const PostLink = ({ ...props }) => <Link {...props} />;
 
 const PostUl = props => {
-  return <List {...props} />;
+  return (
+    <UnorderedList {...props} pl={20}/>
+  )
 };
 
 const PostOl = props => {
-  return <List ordered {...props} />;
+  return <OrderedList {...props} />
 };
 
 const PostLi = ({ children, ...props }) => {

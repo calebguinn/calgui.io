@@ -3,9 +3,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { ProjectCard } from "../components/project-card";
 
-import thumbIOS from '../public/images/projects/thumbIOS.png'
-import thumbGOLv2 from '../public/images/projects/thumbGOL-v2.png'
-import thumbPortfolio from '../public/images/projects/thumbPortfolio.png'
+import thumbIOS from '../public/static/images/projects/thumbIOS.png'
+import thumbGOLv2 from '../public/static/images/projects/thumbGOL-v2.png'
+import thumbPortfolio from '../public/static/images/projects/thumbPortfolio.png'
 
 const Projects = () => (
 	<Layout title="Projects">

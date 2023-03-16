@@ -10,8 +10,8 @@ const Website = ({ Component, pageProps, router }) => {
 		<ChakraProvider theme={Theme}>
       <Fonts />
 			<Layout router={router}>
-				<Component {...pageProps} key={router.route} />
         <Analytics />
+				<Component {...pageProps} key={router.route} />
 			</Layout>
 		</ChakraProvider>
 	)

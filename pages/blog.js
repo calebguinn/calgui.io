@@ -30,7 +30,7 @@ export default function Blog({ posts, featured }) {
                 title={post.title}
                 timecode={post.timecode} 
                 date={post.date}
-                gradient={gradients[index]}
+                gradient={gradients[index%3]}
                 key={index}
               />
             ))}
@@ -72,7 +72,7 @@ export function getStaticProps() {
   const featured = allPosts.filter(post => post.featured)
 
   const posts = allPosts
-    .filter(post => post.featured !== true)
+    //.filter(post => post.featured !== true)
     .sort((a, b) => {
       return new Date(a.date).getTime() - new Date(b.date).getTime();
     })
