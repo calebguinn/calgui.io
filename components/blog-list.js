@@ -14,7 +14,7 @@ export const BlogListCard = ({ id, title, timecode, date }) => {
         <Text>
           {title}
         </Text>
-        <Spacer display='inline-flex' boxSize={6}/>
+        <Spacer boxSize={6}/>
         <Box display='inline-flex' alignItems='center'>
           <AiFillClockCircle /><Spacer boxSize={1} />
           <Text display='inline-flex' alignItems='center'>

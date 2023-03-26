@@ -11,7 +11,7 @@ import Section from '../components/section'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons"
 
 const LinkItem = ({ href, target, children, ...props }) => {
 	return (
@@ -58,10 +58,9 @@ const Home = () => {
 					About
 				</Heading>
 				<p>
-				  I&apos;m Caleb, currently I live in Oklahoma and attend the University of Oklahoma (Class of &apos;23).
+				  I&apos;m Caleb, currently I attend the University of Oklahoma (Class of &apos;23).
           I have worked on front-end projects, desktop applications, and various other projects inside and outside
-          of school. I enjoy working with new and emerging technologies to create visually appealing and functional 
-          user experiences. 
+          of school.
 				</p>
 				<Box align="center" alignItems='center' my={4} mb={10} mt={5}>
 					<NextLink href="/projects" passHref scroll={false}>
@@ -73,7 +72,7 @@ const Home = () => {
         <p>
           My projects page include a few, but not all, of the things that I have worked on 
           with more to come in the future. Check out my blog posts for a more in depth explanation of the stories
-          behind each project and how I developed them.
+          behind some of the projects and how I developed them.
         </p>
 			</Section>	
       <Section delay={0.2}>

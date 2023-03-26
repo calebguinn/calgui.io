@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { ProjectCard } from "../components/project-card";
 
-import thumbIOS from '../public/static/images/projects/thumbIOS.png'
+import thumbIOS from '../public/static/images/projects/Instructor-Operator-System/iosScreenshot2.png'
 import thumbGOLv2 from '../public/static/images/projects/thumbGOL-v2.png'
 import thumbPortfolio from '../public/static/images/projects/thumbPortfolio.png'
 
