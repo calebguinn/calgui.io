@@ -8,6 +8,7 @@
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **3D Blob**: [Three.js](https://threejs.org)
 
+![Portfolio Screenshot](public/static/images/projects/thumbPortfolio.png)
 
 ## How to set it up
 
