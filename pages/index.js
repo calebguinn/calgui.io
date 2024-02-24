@@ -58,9 +58,7 @@ const Home = () => {
 					About
 				</Heading>
 				<p>
-				  I&apos;m Caleb, currently I attend the University of Oklahoma (Class of &apos;23).
-          I have worked on front-end projects, desktop applications, and various other projects inside and outside
-          of school.
+				  I&apos;m Caleb, a Software Developer based out of Oklahoma Ciy with a B.S. in Computer Science from the University of Oklahoma currently working at Paycom.
 				</p>
 				<Box align="center" alignItems='center' my={4} mb={10} mt={5}>
 					<NextLink href="/projects" passHref scroll={false}>
